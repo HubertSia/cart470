@@ -159,6 +159,181 @@ A **large-screen exhibition game** where many visitors play collectively using t
 - **It can be many games or levels, but one version also works**
 - **Explore the body and not just the phone**
 - **Character can be a solution or prototype** for variety
+
+
+============================================
+
+
+
+
+## Concept 1: "The Swarm" — Collective Dot Movement
+
+Core Idea:
+Everyone is a dot on screen. You don't know which dot is yours until you move. The goal is for all dots to gather in the center (or a target zone) simultaneously.
+
+How It Works:
+
+· Player scans QR → phone becomes a simple D-pad (left/right/up/down)
+· Player presses a direction → their dot moves on screen
+· Player discovers which dot is theirs through movement
+· Goal: all dots reach the center at the same time
+· When a player leaves, their dot remains as a static obstacle or slowly drifts
+
+Pros:
+
+· Extremely simple to understand and prototype
+· Asynchronous by nature (dots persist)
+· No tutorial needed — move to figure out who you are
+· Visually striking with 20–30 dots moving
+
+Cons:
+
+· May lack long-term engagement
+· "All reach center" goal may be frustrating with random players
+· Needs a strong feedback loop to feel rewarding
+
+Exhibition Twist:
+
+· When no one plays, dots slowly drift and form patterns
+· Leaderboard: who reached center fastest? Who helped most?
+
+---
+
+## Concept 2: "Territory Paint" — Team Color War
+
+Core Idea:
+Two teams (Red vs. Blue). Players move their avatars around a grid-based screen. Wherever they walk, they paint the tile their color. Team with the most tiles at the end of a 5-minute round wins.
+
+How It Works:
+
+· Phone: left/right/up/down controls
+· Each player is a colored square/dot on a grid
+· Moving over a tile claims it for your team
+· Opponents can overwrite your tiles by walking over them
+· Rounds last 5 minutes, then reset with a winner announcement
+· Players can join mid-round (pop-in)
+
+Pros:
+
+· Immediately readable — everyone understands color war
+· Team play creates emergent cooperation
+· Short rounds = frequent wins/losses = engagement
+· Easy to prototype (grid + colors)
+
+Cons:
+
+· Team balance issues if one side has more players
+· Needs a reset mechanic that doesn't feel punishing
+· May need a "no-player" state where tiles slowly decay
+
+Exhibition Twist:
+
+· When no players, the board slowly fades to neutral
+· Leaderboard: individual tiles claimed, team wins
+
+---
+
+## Concept 3: "The Tower" — Collective Stacking
+
+Core Idea:
+A tower grows in the center of the screen. Each player contributes blocks by pressing buttons on their phone. The tower must be built high enough to reach a goal before time runs out — but it can also collapse if too many players add blocks too fast.
+
+How It Works:
+
+· Phone: one button (ADD BLOCK) and left/right (to choose side)
+· Each press adds a block to the tower
+· If the tower becomes unbalanced (too many blocks on one side), it collapses
+· Players must coordinate — add evenly, communicate through movement
+· Goal: reach a target height within 10 minutes
+· When players leave, their contributions remain
+
+Pros:
+
+· Creates natural tension and cooperation
+· Simple one-button interaction (great for latency)
+· Visual spectacle — a giant tower growing on screen
+· Asynchronous — tower persists between sessions
+
+Cons:
+
+· May be too simple without additional mechanics
+· Collapse mechanic could feel punishing
+· Needs clear feedback on balance
+
+Exhibition Twist:
+
+· When no players, the tower stands silently
+· Leaderboard: total height achieved, most blocks contributed
+
+---
+
+## Concept 4: "Ecosystem" — Predator & Prey
+
+Core Idea:
+Players are creatures in a simple ecosystem. Some are predators (bigger dots), some are prey (smaller dots). Predators eat prey to grow; prey eat food pellets to survive. The goal is to survive as long as possible or reach the top of the food chain.
+
+How It Works:
+
+· Phone: D-pad to move
+· Players start as prey (small dots)
+· Eating food pellets → grow → become predator
+· Predators eat prey → grow larger
+· If eaten, you respawn as prey after a short delay
+· Persistent world — creatures stay when players leave (become AI-controlled?)
+· Leaderboard: longest survival, most prey eaten
+
+Pros:
+
+· Emergent gameplay — different roles create variety
+· Asynchronous — world persists
+· Visual clarity: size = power
+· Pop-in/pop-out works naturally
+
+Cons:
+
+· More complex to balance
+· May need AI for abandoned creatures
+· Could be frustrating for new players (immediately eaten)
+
+Exhibition Twist:
+
+· When no players, creatures wander as AI
+· New players see a living world before joining
+
+---
+
+## Concept 5: "Signal" — Cooperative Puzzle Solving
+
+Core Idea:
+The screen shows a giant grid of nodes (like a circuit board). Players are "signals" that must travel from one side to the other. Each player controls one signal. The catch: signals can only pass through nodes that are activated by other players standing on them. Cooperation is mandatory.
+
+How It Works:
+
+· Phone: D-pad to move your signal
+· Screen: grid of nodes, some active, some inactive
+· Players must position themselves on inactive nodes to activate them for others
+· Goal: get as many signals as possible to the other side within 5 minutes
+· If a player leaves, their signal becomes a static node
+· New players join as new signals
+
+Pros:
+
+· Deep cooperation — players must work together
+· Asynchronous — nodes persist
+· Puzzle-like, satisfying when solved
+· Visually interesting (circuit board aesthetic)
+
+Cons:
+
+· May be too complex for quick onboarding
+· Requires communication (hard in exhibition)
+· Needs careful level design
+
+Exhibition Twist:
+
+· When no players, the grid slowly pulses with light
+· Leaderboard: signals delivered, nodes activated
+
 - **Design problem:** does my character stay there or disappear? (find all the problems)
 - **We can have ideas for games** (what is the story?). Is it a team game or team vs. team?
 - **What is the player trying to do, and how does the player know he did it well?**
