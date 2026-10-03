@@ -4,5 +4,5 @@ Team **BEACH**, Bianca, Emma, Alexandre, Cheuk and Hubert (me) has made some ide
 
 
 
-![image](.../cart470/image/image1.png)
-![image](.../cart470/image/image2.png)
+![image](/image/image1.png)
+![image](/image/image2.png)
