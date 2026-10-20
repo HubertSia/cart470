@@ -15,8 +15,8 @@ Preview:
 Here's the list on what the others need to work on:
 
 
-**Alex/ FayFay** = gameplay issue
+**Alex / FayFay** = gameplay issue
 
-**Bianca/ Emma:** = Big Screen
+**Bianca / Emma:** = Big Screen
 
 **Hubert:** = controller
